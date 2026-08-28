@@ -1,0 +1,14 @@
+[Unit]
+Description=Linux Zello Bridge Web Console
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/zello-bridge
+ExecStart=/usr/bin/python3 -u /opt/zello-bridge/gui.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

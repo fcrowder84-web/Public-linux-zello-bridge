@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets / credentials
+*.env
+.env*
+credentials/
+*zello-bridge-credentials*
+*.secret
+*.key
+*.pem
+
+# Local/runtime configuration
+zello-bridge.json
+zello-bridge-radios.json
+controls.json
+dispatch.json
+setup-scan.json
+
+# Logs / temporary files
+*.log
+*.tmp
+*.bak
+*.backup
+*.hive-backup*
+*.working-backup

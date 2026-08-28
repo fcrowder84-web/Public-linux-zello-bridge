@@ -1,0 +1,14 @@
+[Unit]
+Description=Zello Radio Bridge - %i
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/zello-bridge
+ExecStart=/usr/bin/python3 -u /opt/zello-bridge/bridge_radio.py %i
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
