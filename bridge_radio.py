@@ -68,4 +68,4 @@ os.environ['ZELLO_BRIDGE_SERVICE'] = f'zello-bridge@{radio_id}.service'
 print(f'Loading saved radio: {radio.get("name", radio_id)}')
 print(f'PTT device: {serial_dev}')
 print(f'Audio device: {os.environ["ZELLO_AUDIO_DEV"]}')
-runpy.run_path('/opt/zello-bridge/radio_engine.py', run_name='__main__')
+runpy.run_path('/opt/zello-bridge/radio_engine_runner.py', run_name='__main__')
