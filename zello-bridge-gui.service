@@ -6,7 +6,7 @@ After=network-online.target
 [Service]
 Type=simple
 WorkingDirectory=/opt/zello-bridge
-ExecStart=/usr/bin/python3 -u /opt/zello-bridge/gui.py
+ExecStart=/usr/bin/python3 -u /opt/zello-bridge/gui_runner.py
 Restart=always
 RestartSec=3
 
